@@ -1,0 +1,31 @@
+.form {
+    box-shadow: 0px 2px 10px gray;
+    width: 250px;
+    height: 400px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Arial;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-family: Arial;
+}
+
+input,textarea {
+    width: 90%;
+}
+
+#submit {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+    color: azure;
+}
+
+
+
