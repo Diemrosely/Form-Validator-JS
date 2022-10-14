@@ -4,43 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="mt-form-validator.css">
+    <title>Form Validator</title>
 </head>
-<link rel="stylesheet" href="mt-form-validator.css">
 <body>
-    <div class="form">
-    <h2>Register With Us</h2>
-    <form>
-        <label for="gender">Gender:</label>
-        <select id="gender" name="'gender">
-            <option value="none">None</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select>
-        <br>
-        <br>
-        <label for="username">Username:</label>
-        <br>
-        <input type="text" id="username" name="username" placeholder="FirstNameLastName">
-        <br>
-        <br>
-        <label for="email">Email Address:</label>
-        <br>
-        <input type="text" id="email" name="email" placeholder="example@email.com">
-        <br>
-        <br>
-        <label for="password">Password:</label>
-        <br>
-        <input type="text" id="password" name="password" placeholder="Enter Password">
-        <br>
-        <br>
-        <label for="confirm_password">Confirm Password:</label>
-        <br>
-        <input type="text" id="confirm_password" name="confirm_password" placeholder="Enter Password Again">
-        <br>
-        <br>
-        <input type="submit" id="submit">
-    </div>  
-    </form>
+    <div class="container">
+        <form id="form" class="form">
+            <h2>Register With Us</h2>
+            <div class="form-control">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="'gender">
+                <option value="none">None</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                </select>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="FirstNameLastName"/>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email" placeholder="example@email.com"/>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password"/>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Enter Password Again"/>
+                <small>Error Message</small>
+            </div>
+            <button type="submit">Submit</button> 
+        </form>
+    </div>
+    
+    <script src="mt-validator.js"></script>
 </body>
 </html>
